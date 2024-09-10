@@ -1,0 +1,30 @@
+.heroFeatures {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../images/components/hero-features/hero-features-bg-splash.png);
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+.heroFeatures__content {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  width: 70%;
+  height: 60%;
+}
+.heroFeatures__header {
+  color: var(--cor-primaria);
+  font-size: var(--fonte-tamanho-grande);
+}
+.heroFeatures__badges {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+.heroFeatures__badges img {
+  width: 6rem;
+}
