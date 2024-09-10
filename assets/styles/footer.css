@@ -1,0 +1,105 @@
+footer {
+  background-color: var(--cor-complementar);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.newsletter {
+  background-color: var(--cor-complementar-media);
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 140px;
+}
+
+.newsletter-container {
+  color: var(--cor-primaria);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navFooter-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 200px;
+}
+
+.navFooter-menu,
+.navFooter-socials {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.navFooter-menu {
+  display: flex;
+  align-items: center;
+}
+
+.navFooter-menu li {
+  color: var(--cor-branco);
+  padding: 10px 20px;
+}
+
+.navFooter-menu li a:hover {
+  color: var(--cor-primaria);
+  font-weight: var(--fonte-peso-media);
+}
+
+.navFooter-socials {
+  gap: 2rem;
+}
+.navFooter-socials img {
+  width: 2rem;
+}
+
+.facebook-icon {
+  background-image: url("/assets/images/generic/socials/facebook.svg");
+  background-size: cover;
+  height: 24px;
+  width: 24px;
+}
+
+.navFooter-socials > a:hover .facebook-icon {
+  transition: background-image 0.3s ease-in-out;
+  background-image: url("/assets/images/generic/socials/facebook-hover.svg");
+}
+
+.instagram-icon {
+  background-image: url("/assets/images/generic/socials/instagram.svg");
+  background-size: cover;
+  height: 24px;
+  width: 24px;
+}
+
+.navFooter-socials > a:hover .instagram-icon {
+  transition: background-image 0.3s ease-in-out;
+  background-image: url("/assets/images/generic/socials/instagram-hover.svg");
+}
+
+.x-twitter-icon {
+  background-image: url("/assets/images/generic/socials/x-twitter.svg");
+  background-size: cover;
+  height: 24px;
+  width: 24px;
+}
+
+.navFooter-socials > a:hover .x-twitter-icon {
+  transition: background-image 0.3s ease-in-out;
+  background-image: url("/assets/images/generic/socials/x-twitter-hover.svg");
+}
+
+.newsletter__input {
+  height: 32px;
+  width: 240px;
+  border: none;
+  border-radius: 24px;
+  background-color: var(--cor-complementar);
+}
+/* 
+
+ */
