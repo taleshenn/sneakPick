@@ -1,0 +1,53 @@
+.navTop {
+  background-color: var(--cor-complementar-clara);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 140px 20px 140px;
+}
+
+.logo {
+  flex-shrink: 0;
+}
+
+.logo img {
+  height: 24px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu li a {
+  padding: 10px 20px;
+}
+
+.menu li a:hover {
+  color: var(--cor-primaria);
+  background-color: var(--cor-preto);
+  font-weight: var(--fonte-peso-media);
+}
+
+.login > a {
+  display: flex;
+  gap: 10px;
+}
+
+.login-icon {
+  display: flex;
+  background-image: url("/assets/images/generic/icons/login-icon.svg");
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+}
+
+.login > a:hover {
+  font-weight: var(--fonte-peso-media);
+  transition: background-image 0.3s ease-in-out;
+}
+
+.login > a:hover .login-icon {
+  transition: background-image 0.3s ease-in-out;
+  background-image: url("/assets/images/generic/icons/logout-icon.svg");
+}
