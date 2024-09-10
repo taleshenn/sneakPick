@@ -5,6 +5,7 @@
 @import "./navbar.css";
 @import "./hero-section-top.css";
 @import "./hero-features-section.css";
+@import "./store.css";
 @import "./footer.css";
 
 /* Importe media queries para design responsivo */
