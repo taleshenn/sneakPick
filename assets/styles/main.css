@@ -1,16 +1,11 @@
-/*=============== IMPORTAÇÃO DE OUTROS ESTILOS ===============*/
-/* Importe estilos de reset primeiro para um ponto de partida limpo */
+/*=============== RESET CSS ===============*/
 @import "./reset.css";
-@import "./navbar.css";
-@import "./footer.css";
-
-/* Importe media queries para design responsivo */
-@import "./media-queries.css";
 
 /*=============== FONTES DO GOOGLE ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
+/*=============== Fonte Padrão ===============*/
 body {
   font-family: "Montserrat", sans-serif;
 }
@@ -41,3 +36,12 @@ body {
   --fonte-peso-media: 600;
   --fonte-peso-bold: 700;
 }
+
+/*=============== IMPORTAÇÃO DE OUTROS ESTILOS ===============*/
+@import "./navbar.css";
+@import "./hero-section-top.css";
+@import "./hero-features-section.css";
+@import "./footer.css";
+
+/* Importe media queries para design responsivo */
+@import "./media-queries.css";
