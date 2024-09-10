@@ -13,12 +13,61 @@ footer {
   height: 140px;
 }
 
-.newsletter-container {
+.newsletter__container {
   color: var(--cor-primaria);
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 2rem;
+}
+
+.newsletter__form {
+  display: flex;
   gap: 1rem;
+}
+
+.newsletter ::placeholder {
+  color: var(--cor-branco);
+  padding-left: 1rem;
+}
+
+.newsletter__input {
+  padding-left: 1rem;
+  height: 32px;
+  width: 240px;
+  border: none;
+  border-radius: 24px;
+  background-color: var(--cor-complementar);
+  transition: all 0.3s ease-in-out;
+}
+
+.newsletter__input:focus {
+  background-color: var(--cor-complementar-clara);
+  outline: none;
+}
+
+.newsletter__input:focus::placeholder {
+  color: var(--cor-complementar);
+  transition: all 0.3s ease-in-out;
+}
+
+.newsletter__button {
+  height: 32px;
+  width: 64px;
+  border: none;
+  border-radius: 1rem;
+  background-color: var(--cor-primaria);
+  transition: all 0.3s ease-in-out;
+}
+.newsletter__button:hover {
+  background-color: var(--cor-branco);
+  transition: all 0.2s ease-in-out;
+}
+
+.newsletter__button:active {
+  background-color: var(--cor-complementar);
+  color: var(--cor-branco);
+  transition: all 0.2s ease-in-out;
 }
 
 .navFooter-container {
@@ -43,11 +92,12 @@ footer {
 .navFooter-menu li {
   color: var(--cor-branco);
   padding: 10px 20px;
+  transition: all 0.3s ease-in-out;
 }
 
 .navFooter-menu li a:hover {
   color: var(--cor-primaria);
-  font-weight: var(--fonte-peso-media);
+  transition: all 0.3s ease-in-out;
 }
 
 .navFooter-socials {
@@ -62,6 +112,7 @@ footer {
   background-size: cover;
   height: 24px;
   width: 24px;
+  transition: background-image 0.3s ease-in-out;
 }
 
 .navFooter-socials > a:hover .facebook-icon {
@@ -74,6 +125,7 @@ footer {
   background-size: cover;
   height: 24px;
   width: 24px;
+  transition: background-image 0.3s ease-in-out;
 }
 
 .navFooter-socials > a:hover .instagram-icon {
@@ -86,6 +138,7 @@ footer {
   background-size: cover;
   height: 24px;
   width: 24px;
+  transition: background-image 0.3s ease-in-out;
 }
 
 .navFooter-socials > a:hover .x-twitter-icon {
@@ -93,13 +146,6 @@ footer {
   background-image: url("/assets/images/generic/socials/x-twitter-hover.svg");
 }
 
-.newsletter__input {
-  height: 32px;
-  width: 240px;
-  border: none;
-  border-radius: 24px;
-  background-color: var(--cor-complementar);
-}
 /* 
 
  */
