@@ -1,34 +1,29 @@
 footer {
   background-color: var(--cor-complementar);
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  align-items: center;
 }
 .newsletter {
   background-color: var(--cor-complementar-media);
   display: flex;
   justify-content: center;
-  width: 100vw;
-  height: 140px;
+  padding: 3rem;
 }
-
 .newsletter__container {
-  color: var(--cor-primaria);
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 2rem;
 }
 
-.newsletter__form {
-  display: flex;
-  gap: 1rem;
+.newsletter__container > p {
+  color: var(--cor-primaria);
+  text-transform: uppercase;
 }
 
-.newsletter ::placeholder {
+.newsletter__form ::placeholder {
   color: var(--cor-branco);
-  padding-left: 1rem;
 }
 
 .newsletter__input {
@@ -36,7 +31,6 @@ footer {
   height: 32px;
   width: 240px;
   border: none;
-  border-radius: 24px;
   background-color: var(--cor-complementar);
   transition: all 0.3s ease-in-out;
 }
@@ -55,7 +49,6 @@ footer {
   height: 32px;
   width: 64px;
   border: none;
-  border-radius: 1rem;
   background-color: var(--cor-primaria);
   transition: all 0.3s ease-in-out;
 }
@@ -65,8 +58,8 @@ footer {
 }
 
 .newsletter__button:active {
-  background-color: var(--cor-complementar);
-  color: var(--cor-branco);
+  background-color: var(--cor-complementar-media);
+  color: var(--cor-primaria);
   transition: all 0.2s ease-in-out;
 }
 
@@ -74,7 +67,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 200px;
+  padding: 2rem;
 }
 
 .navFooter-menu,
@@ -82,11 +75,6 @@ footer {
   display: flex;
   justify-content: center;
   padding: 1rem;
-}
-
-.navFooter-menu {
-  display: flex;
-  align-items: center;
 }
 
 .navFooter-menu li {
@@ -145,7 +133,3 @@ footer {
   transition: background-image 0.3s ease-in-out;
   background-image: url("/assets/images/generic/socials/x-twitter-hover.svg");
 }
-
-/* 
-
- */
