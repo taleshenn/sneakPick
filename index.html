@@ -4,26 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SneakPick - Yellow and Black Sneakers</title>
-    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./assets/styles/main.css" />
   </head>
   <body>
     <header>
       <nav class="navTop">
         <div class="logo">
-          <img
-            src="./assets/images/generic/logo-sneakpick.svg"
-            alt="Logo da loja SneakPeak"
-          />
+          <a href="#">
+            <img
+              src="./assets/images/generic/logo-sneakpick.svg"
+              alt="Logo da loja SneakPeak"
+          /></a>
         </div>
         <ul class="menu">
-          <li><a href="#" alt="Voltar ao início da página.">Início</a></li>
+          <li>
+            <a href="./index.html" alt="Voltar ao início da página.">Início</a>
+          </li>
           <li><a href="#" alt="Visite a loja.">Loja</a></li>
           <li><a href="#" alt="Saiba mais sobre a SneakPick.">Sobre</a></li>
           <li><a href="#" alt="Fale conosco.">Contato</a></li>
         </ul>
         <div class="login">
-          <a href="#">Entrar</a>
-          <div class="login-icon"></div>
+          <a href="#">
+            Entrar
+            <div class="login-icon"></div>
+          </a>
         </div>
       </nav>
     </header>
@@ -185,23 +190,37 @@
     </section>
     <footer>
       <div class="newsletter">
-        <p>Receba nossas notícias</p>
-        <input type="text" placeholder="Digite seu e-mail" />
-        <button type="submit">Enviar</button>
+        <div class="newsletter-container">
+          <p>Receba nossas notícias</p>
+          <div>
+            <input
+              class="newsletter__input"
+              type="text"
+              placeholder="Digite seu e-mail"
+            />
+            <button class="newsletter__button" type="submit">Enviar</button>
+          </div>
+        </div>
       </div>
-      <nav class="navFooter">
-        <ul class="menuFooter">
+      <nav class="navFooter-container">
+        <ul class="navFooter-menu">
           <li><a href="#" alt="Voltar ao início da página.">Início</a></li>
           <li><a href="#" alt="Visite a loja.">Loja</a></li>
           <li><a href="#" alt="Saiba mais sobre a SneakPick.">Sobre</a></li>
           <li><a href="#" alt="Fale conosco.">Contato</a></li>
         </ul>
+        <div class="navFooter-socials">
+          <a href="#">
+            <div class="facebook-icon"></div>
+          </a>
+          <a href="#">
+            <div class="instagram-icon"></div>
+          </a>
+          <a href="#">
+            <div class="x-twitter-icon"></div>
+          </a>
+        </div>
       </nav>
-      <div class="socials">
-        <img src="./assets/images/generic/socials/facebook.svg" alt="" />
-        <img src="./assets/images/generic/socials/instagram.svg" alt="" />
-        <img src="./assets/images/generic/socials/x-twitter.svg" alt="" />
-      </div>
     </footer>
   </body>
 </html>
