@@ -4,6 +4,7 @@
   align-items: center;
   background-image: url(../images/components/hero-features/hero-features-bg-splash.png);
   background-size: cover;
+  background-position: center center;
   height: 100vh;
 }
 .heroFeatures__content {
