@@ -31,12 +31,17 @@ body {
   --cor-complementar-clara: hsl(0, 0%, 90%);
   --cor-branco: hsl(0, 0%, 100%);
   --cor-preto: hsl(0, 0%, 0%);
+  --cor-dividida: linear-gradient(
+    to right,
+    var(--cor-primaria) 40%,
+    var(--cor-complementar) 40%
+  );
 
   /*========== Fonte e tipografia ==========*/
   /* 0.5rem = 8px | 1rem = 16px  */
   --fonte-primaria: "Montserrat", sans-serif;
   --fonte-complementar: "Bebas Neue", sans-serif;
-  --biggest-font-size: 5rem;
+  --fonte-tamanho-hero: 24rem;
   --fonte-tamanho-grande: 2rem;
   --fonte-tamanho-normal: 1rem;
   --fonte-tamanho-media: 1.5rem;
