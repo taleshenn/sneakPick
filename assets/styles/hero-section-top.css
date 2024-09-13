@@ -17,7 +17,6 @@
   position: relative;
 }
 .hero__product__lista {
-  z-index: 10;
   display: flex;
   flex-direction: column-reverse;
   justify-content: space-between;
@@ -27,8 +26,10 @@
 }
 
 .hero__product__name-img {
+  z-index: 7;
   height: 270px;
   width: 700px;
+  background-image: var(--imagem-hero-primeiro-header);
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
@@ -44,7 +45,7 @@
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
-  right: 150px;
+  right: 170px;
   top: 50px;
   animation: bounceProduct 10s infinite ease-in-out;
 }
@@ -52,10 +53,12 @@
 .hero__cta__lettering-tagline {
   text-wrap: nowrap;
   font-family: var(--fonte-primaria);
-  font-size: calc(var(--fonte-tamanho-grande) * 1.2);
+  font-size: calc(var(--fonte-tamanho-grande) * 1);
   text-transform: uppercase;
-  position: absolute;
   color: var(--cor-complementar);
+  position: absolute;
+  left: 0;
+  top: 280px;
 }
 
 .hero__product__primeiro,
@@ -70,24 +73,20 @@
   border: var(--cor-branco) solid 0.35rem;
   position: relative;
 }
-
+.hero__product__primeiro,
 .hero__product__segundo:hover,
 .hero__product__terceiro:hover,
 .hero__product__quarto:hover {
   background-color: var(--cor-primaria);
 }
 
-/*========== MENU PRIMEIRO ITEM ==========*/
-.hero__product__primeiro {
-  background-color: var(--cor-primaria);
-}
-.hero__product__primeiro:hover ~ .hero__product__featured {
-  background-image: var(--imagem-hero-primeiro);
-}
-.hero__product__primeiro ~ .hero__product__name-img {
-  background-image: var(--imagem-hero-primeiro-header);
+.hero__product__segundo:hover ~ .hero__product__primeiro,
+.hero__product__terceiro:hover ~ .hero__product__primeiro,
+.hero__product__quarto:hover ~ .hero__product__primeiro {
+  background-color: var(--cor-complementar-clara);
 }
 
+/*========== MENU PRIMEIRO ITEM ==========*/
 .hero__product__primeiro-thumb {
   position: absolute;
   background-image: var(--imagem-hero-primeiro-thumb);
@@ -106,9 +105,6 @@
   left: -30px;
 }
 /*========== MENU SEGUNDO ITEM ==========*/
-.tagRelacional:hover ~ .hero__product__primeiro {
-  background-color: var(--cor-complementar-clara);
-}
 
 .hero__product__segundo:hover ~ .hero__product__featured {
   background-image: var(--imagem-hero-segundo);
@@ -135,6 +131,7 @@
   left: -30px;
 }
 /*========== MENU TERCEIRO ITEM ==========*/
+
 .hero__product__terceiro:hover ~ .hero__product__featured {
   background-image: var(--imagem-hero-terceiro);
 }
@@ -186,8 +183,6 @@
 
 /*========== CTA ==========*/
 .hero__cta__button {
-  position: absolute;
-  bottom: 100px;
   font-family: var(--fonte-complementar);
   font-size: var(--fonte-tamanho-grande);
   font-weight: var(--fonte-peso-normal);
@@ -197,6 +192,9 @@
   padding: 1rem 2rem;
   outline: var(--cor-complementar) solid 1px;
   border: none;
+  position: absolute;
+  left: 0;
+  top: 380px;
 }
 
 .hero__cta__button:hover {
