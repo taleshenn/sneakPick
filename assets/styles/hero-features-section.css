@@ -11,17 +11,19 @@
   display: flex;
   justify-content: space-between;
   align-content: center;
-  width: 70%;
-  height: 60%;
+  width: 70vw;
+  height: 70vh;
 }
 .heroFeatures__header {
   color: var(--cor-primaria);
-  font-size: var(--fonte-tamanho-grande);
+  font-size: calc(var(--fonte-tamanho-grande) * 1.5);
+  font-weight: var(--fonte-peso-bold);
+  text-wrap: wrap;
 }
 .heroFeatures__badges {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   gap: 2rem;
 }
