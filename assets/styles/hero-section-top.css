@@ -1,13 +1,11 @@
-/*========== CONTAINER DA SEÇÃO ==========*/
 .hero__bg {
+  background-image: var(--cor-dividida-horizontal);
   display: flex;
   justify-content: center;
+  flex-direction: row;
   align-items: center;
   height: 100vh;
-  background-image: var(--cor-dividida);
 }
-
-/*========== PRODUTO ==========*/
 .hero__product__container {
   display: flex;
   justify-content: center;
@@ -31,6 +29,7 @@
   width: 700px;
   background-image: var(--imagem-hero-primeiro-header);
   background-size: contain;
+  background-position: center center;
   background-repeat: no-repeat;
   position: absolute;
   top: 0;
@@ -60,7 +59,6 @@
   left: 0;
   top: 280px;
 }
-
 .hero__product__primeiro,
 .hero__product__segundo,
 .hero__product__terceiro,
@@ -86,7 +84,6 @@
   background-color: var(--cor-complementar-clara);
 }
 
-/*========== MENU PRIMEIRO ITEM ==========*/
 .hero__product__primeiro-thumb {
   position: absolute;
   background-image: var(--imagem-hero-primeiro-thumb);
@@ -104,7 +101,6 @@
   top: 16px;
   left: -30px;
 }
-/*========== MENU SEGUNDO ITEM ==========*/
 
 .hero__product__segundo:hover ~ .hero__product__featured {
   background-image: var(--imagem-hero-segundo);
@@ -130,7 +126,6 @@
   top: 16px;
   left: -30px;
 }
-/*========== MENU TERCEIRO ITEM ==========*/
 
 .hero__product__terceiro:hover ~ .hero__product__featured {
   background-image: var(--imagem-hero-terceiro);
@@ -155,7 +150,6 @@
   top: 16px;
   left: -30px;
 }
-/*========== MENU QUARTO ITEM ==========*/
 .hero__product__quarto:hover ~ .hero__product__featured {
   background-image: var(--imagem-hero-quarto);
 }
@@ -181,7 +175,6 @@
   left: -30px;
 }
 
-/*========== CTA ==========*/
 .hero__cta__button {
   font-family: var(--fonte-complementar);
   font-size: var(--fonte-tamanho-grande);
@@ -206,14 +199,16 @@
   color: var(--cor-complementar);
 }
 
-/*========== SETA COM ANIMAÇÃO ==========*/
-
 .arrowDown {
+  background-image: var(--imagem-arrow-amarela);
   position: absolute;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
   width: 50px;
   height: 50px;
-  bottom: -2rem;
-  animation: bounceArrow 10s infinite ease-in-out;
+  bottom: -4rem;
+  animation: bounceArrow 6s infinite cubic-bezier(0.075, 0.82, 0.165, 1);
   will-change: transform;
 }
 
@@ -222,20 +217,19 @@
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-1rem);
+    transform: translateY(2rem);
   }
   100% {
     transform: translateY(0);
   }
 }
 
-/*========== ANIMAÇÃO DO HERO ==========*/
 @keyframes bounceProduct {
   0% {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-4rem); /* Ajuste o valor conforme necessário */
+    transform: translateY(-2rem);
   }
   100% {
     transform: translateY(0);

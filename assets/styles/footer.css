@@ -3,63 +3,86 @@ footer {
   display: flex;
   flex-direction: column;
 }
+
 .newsletter {
-  background-color: var(--cor-complementar-media);
   display: flex;
   justify-content: center;
-  padding: 3rem;
+  flex-direction: column;
+  background-color: var(--cor-complementar-media);
 }
-.newsletter__container {
+
+.newsletter__input {
+  gap: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 2rem;
+  padding: 3rem;
 }
 
-.newsletter__container > p {
+.newsletter__input > p {
   color: var(--cor-primaria);
-  text-transform: uppercase;
+  font-size: var(--fonte-tamanho-media);
+  font-weight: var(--fonte-peso-bold);
 }
 
-.newsletter__form ::placeholder {
-  color: var(--cor-branco);
+.newsletter__input-form::placeholder {
+  color: var(--cor-preto);
 }
 
-.newsletter__input {
+.newsletter__input-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.newsletter__input-form-colect {
   padding-left: 1rem;
-  height: 32px;
-  width: 240px;
+  height: 2rem;
   border: none;
-  background-color: var(--cor-complementar);
+  width: 15rem;
   transition: all 0.3s ease-in-out;
-}
-
-.newsletter__input:focus {
   background-color: var(--cor-complementar-clara);
-  outline: none;
+  outline: var(--cor-complementar) solid 1px;
 }
 
-.newsletter__input:focus::placeholder {
+.newsletter__input-form-colect:focus {
+  background-color: var(--cor-primaria);
+  outline: var(--cor-complementar) solid 1px;
+}
+
+.newsletter__input-form-colect::placeholder {
+  color: var(--cor-complementar);
+}
+
+.newsletter__input-form-colect:focus::placeholder {
   color: var(--cor-complementar);
   transition: all 0.3s ease-in-out;
 }
 
-.newsletter__button {
-  height: 32px;
-  width: 64px;
+.newsletter__input-form-button {
+  height: 2rem;
+  width: 4rem;
   border: none;
-  background-color: var(--cor-primaria);
+  background-color: var(--cor-complementar);
   transition: all 0.3s ease-in-out;
+  color: var(--cor-primaria);
+  outline: var(--cor-complementar) solid 1px;
 }
-.newsletter__button:hover {
-  background-color: var(--cor-branco);
+
+.newsletter__input-form-button:hover {
+  background-color: var(--cor-primaria);
+  color: var(--cor-complementar);
+  outline: var(--cor-complementar) solid 1px;
+
   transition: all 0.2s ease-in-out;
 }
 
-.newsletter__button:active {
-  background-color: var(--cor-complementar-media);
-  color: var(--cor-primaria);
+.newsletter__input-form-button:active {
+  background-color: var(--cor-complementar-clara);
+  color: var(--cor-complementar);
+  outline: var(--cor-complementar) solid 1px;
   transition: all 0.2s ease-in-out;
 }
 
@@ -79,7 +102,7 @@ footer {
 
 .navFooter-menu li {
   color: var(--cor-branco);
-  padding: 10px 20px;
+  padding: 0.7rem 1.5rem;
   transition: all 0.3s ease-in-out;
 }
 
@@ -98,8 +121,8 @@ footer {
 .facebook-icon {
   background-image: url("/assets/images/generic/socials/facebook.svg");
   background-size: cover;
-  height: 24px;
-  width: 24px;
+  height: 1.5rem;
+  width: 1.5rem;
   transition: background-image 0.3s ease-in-out;
 }
 
@@ -111,8 +134,8 @@ footer {
 .instagram-icon {
   background-image: url("/assets/images/generic/socials/instagram.svg");
   background-size: cover;
-  height: 24px;
-  width: 24px;
+  height: 1.5rem;
+  width: 1.5rem;
   transition: background-image 0.3s ease-in-out;
 }
 
@@ -124,8 +147,8 @@ footer {
 .x-twitter-icon {
   background-image: url("/assets/images/generic/socials/x-twitter.svg");
   background-size: cover;
-  height: 24px;
-  width: 24px;
+  height: 1.5rem;
+  width: 1.5rem;
   transition: background-image 0.3s ease-in-out;
 }
 
