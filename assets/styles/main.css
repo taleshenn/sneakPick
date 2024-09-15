@@ -18,6 +18,7 @@
 /*=============== Fonte Padrão ===============*/
 body {
   font-family: "Montserrat", sans-serif;
+  background-color: var(--cor-complementar-clara);
 }
 
 /*=============== VARIÁVEIS GLOBAIS CSS ===============*/
@@ -31,10 +32,15 @@ body {
   --cor-complementar-clara: hsl(0, 0%, 90%);
   --cor-branco: hsl(0, 0%, 100%);
   --cor-preto: hsl(0, 0%, 0%);
-  --cor-dividida: linear-gradient(
+  --cor-dividida-horizontal: linear-gradient(
     to right,
     var(--cor-primaria) 40%,
     var(--cor-complementar) 40%
+  );
+  --cor-dividida-vertical: linear-gradient(
+    to top,
+    var(--cor-primaria) 60%,
+    var(--cor-complementar) 60%
   );
 
   /*========== Fonte e tipografia ==========*/
@@ -66,7 +72,13 @@ body {
   --imagem-hero-quarto-thumb: url(/assets/images/components/hero-top/supra/supra-thumb.png);
   --imagem-hero-quarto-header: url(/assets/images/components/hero-top/supra/supra.svg);
 
-  /*========== PARÂMETROS DE TRANSIÇÃO ==========*/
+  /*========== ÍCONES DIVERSOS  ==========*/
+  --imagem-arrow-amarela: url(/assets/images/generic/icons/arrow.svg);
+  --imagem-arrow-branca: url(/assets/images/generic/icons/arrow-white.svg);
+  --imagem-menu-abrir-branca: url(/assets/images/generic/icons/menu-abrir-branco.svg);
+  --imagem-menu-abrir-amarelo: url(/assets/images/generic/icons/menu-abrir-amarelo.svg);
+
+  /*========== PARÂMETROS DA TRANSIÇÃO GLOBAL ==========*/
   --transition-duration: 0.3s;
   --transition-timing-function: ease-in-out;
 }
