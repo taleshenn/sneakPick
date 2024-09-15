@@ -1,4 +1,25 @@
 @media (max-width: 1024px) {
+  .navTop {
+  }
+
+  .menu__mobile {
+    display: flex;
+  }
+  .menu {
+    flex-direction: column;
+    background-color: var(--cor-complementar-clara);
+    position: absolute;
+    top: 4rem;
+    left: 0;
+  }
+
+  .menu > li {
+    width: 100%;
+  }
+  .menu > li a {
+    padding: 1rem;
+  }
+
   .heroFeatures__content {
     display: flex;
     flex-direction: column;

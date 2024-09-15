@@ -1,9 +1,19 @@
-.navTop {
+header {
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--cor-branco);
+  height: 4rem;
+  position: relative;
+}
+.navTop {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 140px 20px 140px;
+  flex-wrap: nowrap;
+  width: 90%;
+  max-width: 1200px;
 }
 
 .logo {
@@ -11,43 +21,94 @@
 }
 
 .logo img {
-  height: 24px;
+  height: 1.5rem;
 }
 
 .menu {
   display: flex;
+  justify-content: center;
   align-items: center;
+  flex-direction: row;
+  width: 100%;
+  padding: 2rem;
+  gap: 1rem;
 }
 
-.menu li a {
-  padding: 10px 20px;
+.menu > li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
 }
 
-.menu li a:hover {
+.menu > li > a {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 0.5rem 1rem;
+}
+
+.menu > li > a:hover {
   color: var(--cor-primaria);
   background-color: var(--cor-preto);
-  font-weight: var(--fonte-peso-media);
+}
+.menu > li > a:active {
+  color: var(--fonte-cor-complementar);
+  background-color: var(--cor-primaria);
 }
 
 .login > a {
   display: flex;
-  gap: 10px;
+  align-items: center;
+  gap: 0.5rem;
+  border: none;
+  padding: 0.5rem 1rem;
+  outline: var(--cor-complementar) dotted 1.5px;
 }
 
 .login-icon {
   display: flex;
   background-image: url("/assets/images/generic/icons/login-icon.svg");
-  background-size: cover;
-  width: 20px;
-  height: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 1rem;
+  height: 1rem;
 }
 
 .login > a:hover {
-  font-weight: var(--fonte-peso-media);
-  transition: background-image 0.3s ease-in-out;
+  font-weight: var(--fonte-peso-normal);
+  background-color: var(--cor-primaria);
+  outline: var(--cor-complementar) dotted 1.5px;
+}
+
+.login > a:active {
+  color: var(--fonte-cor-complementar);
+  background-color: var(--cor-complementar-clara);
+  outline: var(--cor-complementar) dotted 1.5px;
 }
 
 .login > a:hover .login-icon {
-  transition: background-image 0.3s ease-in-out;
   background-image: url("/assets/images/generic/icons/logout-icon.svg");
+}
+.menu__mobile-container {
+  display: flex;
+  justify-content: first baseline;
+  align-items: center;
+  gap: 1rem;
+}
+
+.menu__mobile {
+  background-image: var(--imagem-menu-icone-amarelo);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  flex-shrink: 0;
+  width: 2rem;
+  height: 2rem;
+  display: none;
+}
+
+.menu__mobile-aberto {
+  transform: rotateX("90deg");
 }

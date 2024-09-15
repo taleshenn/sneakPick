@@ -75,8 +75,8 @@ body {
   /*========== ÍCONES DIVERSOS  ==========*/
   --imagem-arrow-amarela: url(/assets/images/generic/icons/arrow.svg);
   --imagem-arrow-branca: url(/assets/images/generic/icons/arrow-white.svg);
-  --imagem-menu-abrir-branca: url(/assets/images/generic/icons/menu-abrir-branco.svg);
-  --imagem-menu-abrir-amarelo: url(/assets/images/generic/icons/menu-abrir-amarelo.svg);
+  --imagem-menu-icone-branco: url(/assets/images/generic/icons/menu-icone-branco.svg);
+  --imagem-menu-icone-amarelo: url(/assets/images/generic/icons/menu-icone-amarelo.svg);
 
   /*========== PARÂMETROS DA TRANSIÇÃO GLOBAL ==========*/
   --transition-duration: 0.3s;
