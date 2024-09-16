@@ -75,15 +75,12 @@ footer {
   background-color: var(--cor-primaria);
   color: var(--cor-complementar);
   outline: var(--cor-complementar) solid 1px;
-
-  transition: all 0.2s ease-in-out;
 }
 
 .newsletter__input-form-button:active {
   background-color: var(--cor-complementar-clara);
   color: var(--cor-complementar);
   outline: var(--cor-complementar) solid 1px;
-  transition: all 0.2s ease-in-out;
 }
 
 .navFooter-container {
@@ -102,13 +99,18 @@ footer {
 
 .navFooter-menu li {
   color: var(--cor-branco);
-  padding: 0.7rem 1.5rem;
-  transition: all 0.3s ease-in-out;
+  padding: 0.75rem;
 }
 
 .navFooter-menu li a:hover {
   color: var(--cor-primaria);
-  transition: all 0.3s ease-in-out;
+}
+
+.navFooter-menu .login__bottom {
+  color: var(--cor-primaria);
+}
+.navFooter-menu .login__bottom:hover {
+  color: var(--cor-branco);
 }
 
 .navFooter-socials {
@@ -116,6 +118,16 @@ footer {
 }
 .navFooter-socials img {
   width: 2rem;
+}
+
+.login__bottom > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  border: none;
+  padding: 0.5rem 1rem;
+  outline: var(--cor-complementar) dotted 1.5px;
 }
 
 .facebook-icon {

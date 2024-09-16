@@ -1,23 +1,18 @@
 @media (max-width: 1024px) {
-  .navTop {
+  header {
+    height: fit-content;
   }
-
-  .menu__mobile {
-    display: flex;
+  .navTop {
+    padding: 1rem;
+  }
+  .logo img {
+    height: 2rem;
   }
   .menu {
-    flex-direction: column;
-    background-color: var(--cor-complementar-clara);
-    position: absolute;
-    top: 4rem;
-    left: 0;
+    display: none;
   }
-
-  .menu > li {
-    width: 100%;
-  }
-  .menu > li a {
-    padding: 1rem;
+  .login__top {
+    display: none;
   }
 
   .heroFeatures__content {
@@ -180,6 +175,13 @@
   .arrowDown {
     bottom: -300px;
     background-image: var(--imagem-arrow-branca);
+  }
+
+  .navFooter-container {
+    padding: 1rem;
+  }
+  .navFooter-menu li {
+    padding: 0.4rem;
   }
 }
 

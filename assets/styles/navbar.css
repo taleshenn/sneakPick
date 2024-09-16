@@ -1,15 +1,13 @@
 header {
-  z-index: 99;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: var(--cor-branco);
   height: 4rem;
-  position: relative;
 }
 .navTop {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
   width: 90%;
@@ -56,9 +54,9 @@ header {
   color: var(--fonte-cor-complementar);
   background-color: var(--cor-primaria);
 }
-
-.login > a {
+.login__top > a {
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: 0.5rem;
   border: none;
@@ -75,40 +73,16 @@ header {
   width: 1rem;
   height: 1rem;
 }
-
-.login > a:hover {
+.login__top > a:hover {
   font-weight: var(--fonte-peso-normal);
   background-color: var(--cor-primaria);
   outline: var(--cor-complementar) dotted 1.5px;
 }
-
-.login > a:active {
+.login__top > a:active {
   color: var(--fonte-cor-complementar);
   background-color: var(--cor-complementar-clara);
   outline: var(--cor-complementar) dotted 1.5px;
 }
-
-.login > a:hover .login-icon {
+.login__top > a:hover .login-icon {
   background-image: url("/assets/images/generic/icons/logout-icon.svg");
-}
-.menu__mobile-container {
-  display: flex;
-  justify-content: first baseline;
-  align-items: center;
-  gap: 1rem;
-}
-
-.menu__mobile {
-  background-image: var(--imagem-menu-icone-amarelo);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center center;
-  flex-shrink: 0;
-  width: 2rem;
-  height: 2rem;
-  display: none;
-}
-
-.menu__mobile-aberto {
-  transform: rotateX("90deg");
 }
