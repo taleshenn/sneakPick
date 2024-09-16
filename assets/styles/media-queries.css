@@ -183,8 +183,16 @@
   .navFooter-menu li {
     padding: 0.4rem;
   }
+  .lastcard {
+    display: none;
+  }
 }
 
+@media (max-height: 768px) {
+  .lastcard {
+    display: block;
+  }
+}
 @media (max-height: 360px) {
   .heroFeatures__header {
     text-wrap: nowrap;
@@ -205,6 +213,16 @@
   }
   .store__container {
     flex-wrap: wrap;
-    column-gap: 1rem;
+  }
+  .store__header > h2 {
+    padding: 2rem;
+    color: var(--cor-primaria);
+    font-size: var(--fonte-tamanho-normal);
+  }
+  .hero__bg {
+    display: none;
+  }
+  .lastcard {
+    display: none;
   }
 }
