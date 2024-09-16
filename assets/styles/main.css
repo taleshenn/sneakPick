@@ -8,7 +8,6 @@
 @import "./store.css";
 @import "./footer.css";
 
-/* Importe media queries para design responsivo */
 @import "./media-queries.css";
 
 /*=============== FONTES DO GOOGLE ===============*/
@@ -79,17 +78,14 @@ body {
   --imagem-menu-icone-amarelo: url(/assets/images/generic/icons/menu-icone-amarelo.svg);
 
   /*========== PARÂMETROS DA TRANSIÇÃO GLOBAL ==========*/
-  --transition-duration: 0.3s;
-  --transition-timing-function: ease-in-out;
+  --transition-duracao: 0.3s;
+  --transition-curva: ease-in-out;
 }
 
 /*========== TRANSIÇÃO GLOBAL ==========*/
 .transition-all {
-  transition: all var(--transition-duration) var(--transition-timing-function);
-  -webkit-transition: all var(--transition-duration)
-    var(--transition-timing-function);
-  -moz-transition: all var(--transition-duration)
-    var(--transition-timing-function);
-  -ms-transition: all var(--transition-duration)
-    var(--transition-timing-function);
+  transition: all var(--transition-duracao) var(--transition-curva);
+  -webkit-transition: all var(--transition-duracao) var(--transition-curva);
+  -moz-transition: all var(--transition-duracao) var(--transition-curva);
+  -ms-transition: all var(--transition-duracao) var(--transition-curva);
 }
