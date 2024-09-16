@@ -1,28 +1,22 @@
-/* Seleciona todos os elementos e zera margens e padding */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Define uma fonte padrão */
 body {
   font-family: sans-serif;
 }
 
-/* Remove estilos padrão de listas */
 ul,
 ol {
   list-style: none;
 }
-
-/* Remove estilos padrão de links */
 a {
   text-decoration: none;
   color: inherit;
 }
 
-/* Remove estilos padrão de imagens */
 img {
   display: block;
   max-width: 100%;
